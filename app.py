@@ -4,7 +4,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
-file_path = "d:\CODING\My Codes\Git Repos\Sys-NetSec\malicious_phish.csv"  
+file_path = ""  
 data = pd.read_csv(file_path, names=['url', 'type']) 
 
 data.rename(columns={'url': 'URL', 'type': 'Label'}, inplace=True)
